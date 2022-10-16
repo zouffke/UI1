@@ -1,0 +1,26 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav ul{
+    padding: 4px 0;
+    background-color: grey;
+}
+nav li{
+    display: inline;
+    padding: 4px;
+}
+nav li:hover{
+    background-color: red;
+}
+nav a{
+    text-decoration: none;
+}
+
+.hideTitle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left:-10000px;
+}
