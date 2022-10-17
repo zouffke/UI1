@@ -1,20 +1,49 @@
-body{
-    font-family: 'Source Sans Pro', sans-serif;
+:root{
+--black-coral: #48555Dff;
+--silver-sand: #C5C9CEff;
+--cadet-grey: #92A9BFff;
+--slate-gray: #5F7686ff;
+--charcoal: #385261ff;
 }
 
-nav ul{
-    padding: 4px 0;
-    background-color: grey;
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--cadet-grey);
 }
-nav li{
-    display: inline;
+
+.nav{
+    display: flex;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--silver-sand);
+    font-size: 30px;
+}
+
+.nav ul{
+    padding: 0;
+    background-color: var(--charcoal);
+    margin-bottom: 23px;
+}
+.nav li{
+    display: inline-block;
     padding: 4px;
 }
-nav li:hover{
-    background-color: red;
+.nav li:hover{
+    background-color: var(--black-coral);
 }
-nav a{
-    text-decoration: none;
+
+.active{
+    background-color: var(--slate-gray);
+}
+
+p {
+    color: var(--black-coral);
+}
+
+.nav img{
+    padding-right: 5px;
 }
 
 .hideTitle{
@@ -24,3 +53,9 @@ nav a{
     overflow: hidden;
     left:-10000px;
 }
+
+.dropdown{
+    display: none;
+}
+
+

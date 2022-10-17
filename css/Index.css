@@ -1,0 +1,15 @@
+.reviews{
+    list-style: none;
+    display: flex;
+}
+
+.main{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+p {
+    text-align: justify;
+}
+

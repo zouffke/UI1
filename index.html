@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="css/Index.css">
 </head>
 <body>
-<header>
+<header class="nav">
     <h1 class="hideTitle">Home pagina</h1>
-    <nav><h2 class="hideTitle">Navigatie</h2>
+    <img class="nav" src="media/logo.png" alt="Logo">
+    <nav class="nav"><h2 class="hideTitle">Navigatie</h2>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>Producten
-                <ul class="hideTitle">
-                    <li><a href="html/Alle_Producten.html">Alle producten</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="html/Alle_Producten.html">Producten</a>
+                <ul class="dropdown">
                     <li><a href="html/Alle_Producten.html#ILCA">ILCA</a></li>
                     <li><a href="html/Alle_Producten.html#Optimist">Optimist</a></li>
                     <li><a href="html/Alle_Producten.html#Cadet">Cadet</a></li>
@@ -31,7 +31,7 @@
     </nav>
 </header>
 <main>
-    <article>
+    <article class="main">
         <h2 class="hideTitle">main page</h2>
         <section>
             <h3>Wat wij doen.</h3>
@@ -64,7 +64,7 @@
 <footer>
     <aside>
         <h2>Dit is wat onze klanten vinden</h2>
-        <ul>
+        <ul class="reviews">
             <li>
                 <blockquote><img src="media/Persoon.png" alt="Foto van de auteur"><q>Mijn product kwam aan nog de zelfde
                     week dat ik het had besteld.</q><cite>Ronald Guys</cite><img

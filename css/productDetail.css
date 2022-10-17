@@ -1,0 +1,7 @@
+ol{
+    padding-left: 0;
+}
+.breadcrumbs li{
+    display: inline;
+    padding: 4px;
+}
