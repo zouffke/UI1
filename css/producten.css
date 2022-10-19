@@ -1,5 +1,4 @@
 
-
 .producten {
     display: flex;
     gap: 20px;
@@ -21,3 +20,6 @@
     grid-template-rows: auto;
     grid-template-areas: "filter products products products";
 }
+
+
+
