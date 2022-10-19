@@ -1,7 +1,21 @@
-ol{
+ol {
     padding-left: 0;
 }
-.breadcrumbs li{
+
+.breadcrumbs li {
     display: inline;
     padding: 4px;
+}
+
+.spaceSolo {
+    padding-left: 1130px;
+}
+
+ol {
+    padding-bottom: 25px;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
 }

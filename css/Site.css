@@ -6,6 +6,7 @@
 --charcoal: #385261ff;
 }
 
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--cadet-grey);
@@ -58,4 +59,15 @@ p {
     display: none;
 }
 
+a {
+    color: var(--black-coral);
+}
 
+.space{
+    padding-left: 1060px;
+    padding-right: 20px;
+}
+
+.nextLine{
+    padding-right: 1400px;
+}

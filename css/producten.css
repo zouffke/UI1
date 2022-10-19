@@ -1,14 +1,23 @@
-.head{
 
-}
 
 .producten {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
 }
 
-.nextLine{
+.item-a {
+    grid-area: filter;
+}
 
+.item-b {
+    grid-area: products;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "filter products products products";
 }
