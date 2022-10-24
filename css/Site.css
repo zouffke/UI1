@@ -35,6 +35,12 @@ body{
     background-color: var(--black-coral);
 }
 
+.nav li:hover .submenu{
+    position: absolute;
+    display: grid;
+    background-color: var(--slate-gray);
+}
+
 .active{
     background-color: var(--slate-gray);
 }

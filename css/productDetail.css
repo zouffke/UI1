@@ -2,20 +2,83 @@ ol {
     padding-left: 0;
 }
 
+.spaceSolo {
+    padding-left: 1130px;
+}
+
 .breadcrumbs li {
     display: inline;
     padding: 4px;
 }
 
-.spaceSolo {
-    padding-left: 1130px;
-}
-
 ol {
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
-article{
-    display: flex;
-    flex-wrap: wrap;
+article h2 {
+    grid-area: title;
+    justify-self: start;
+    align-self: end;
 }
+
+article img {
+    grid-area: product;
+    justify-self: end;
+}
+
+article aside {
+    grid-area: info;
+}
+
+article .price {
+    grid-area: price;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 250px auto;
+    grid-template-areas: "price count cart";
+    justify-self: end;
+    grid-column-gap: 25px;
+}
+
+article .price p {
+    grid-area: price;
+}
+
+article .price table {
+    grid-area: count;
+    height: 20px;
+    align-self: center;
+    border: 1px solid var(--charcoal);
+    border-collapse: collapse;
+}
+
+article .price td {
+    border: 1px solid var(--charcoal);
+    text-align: center;
+}
+
+article .price img {
+    grid-area: cart;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 580px 550px auto;
+    grid-template-rows: auto 550px auto;
+    grid-template-areas:
+"title . ."
+"product  . info"
+". . price";
+}
+
+aside table{
+    border: 1px solid var(--charcoal);
+    border-collapse: collapse;
+}
+aside table td{
+    border: 2px solid var(--charcoal);
+    text-align: start;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
