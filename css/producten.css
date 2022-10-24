@@ -22,4 +22,30 @@
 }
 
 
+.productContainer .pphoto {
+    grid-area: photo;
+}
+
+.productContainer h4 {
+    grid-area: name;
+}
+
+.productContainer p {
+    grid-area: price;
+}
+
+.productContainer .star {
+    grid-area: star;
+}
+
+.productContainer .cart {
+    grid-area: cart;
+}
+
+.productContainer {
+    display: grid;
+
+}
+
+
 

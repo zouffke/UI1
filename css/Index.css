@@ -1,9 +1,10 @@
-.reviews{
+.reviews {
     list-style: none;
     display: flex;
+    padding-left: 5px;
 }
 
-.main{
+.main {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -11,5 +12,38 @@
 
 p {
     text-align: justify;
+}
+
+h3 {
+    color: var(--black-coral);
+}
+
+h2 {
+    color: var(--black-coral);
+}
+
+q {
+    color: var(--black-coral);
+}
+
+
+blockquote .photo {
+    grid-area: photo;
+}
+
+blockquote .text {
+    grid-area: text;
+}
+
+blockquote .stars {
+    grid-area: stars;
+}
+
+blockquote {
+    display: grid;
+    grid-template-rows: auto 35px;
+    grid-template-columns: 70px auto;
+    grid-template-areas: "photo text"
+                         ".    stars";
 }
 
