@@ -22,9 +22,10 @@
     grid-template-areas: "filter products products products";
 }
 
-article section a{
+article section a {
     text-decoration: none;
 }
+
 article section .pphoto {
     width: 300px;
     height: 300px;
@@ -60,69 +61,106 @@ article section {
                           "star   cart";
 }
 
-.filters ul{
+.filters ul {
     list-style: none;
     padding-left: 10px;
 }
-.filters ul li ul li{
+
+.filters ul li ul li {
     padding-left: 10px;
 }
 
-input{
+input {
     display: none;
 }
 
-.all{
+.all {
     display: none;
 }
 
-input#all:checked ~ main .all{
+input#all:checked ~ main .all {
     display: inline-block;
     align-self: start;
 }
-input#Beschikbaar:checked ~ main .Beschikbaar{
+
+input#Beschikbaar:checked ~ main .Beschikbaar {
     display: initial;
     align-self: flex-start;
 }
-input#BinenkortBeschikbaar:checked ~ main .BinenkortBeschikbaar{
+
+input#BinenkortBeschikbaar:checked ~ main .BinenkortBeschikbaar {
     display: initial;
 }
-input#NietBeschikbaar:checked ~ main .NietBeschikbaar{
+
+input#NietBeschikbaar:checked ~ main .NietBeschikbaar {
     display: initial;
 }
-input#ILCA:checked ~ main .ILCA{
+
+input#ILCA:checked ~ main .ILCA {
     display: initial;
 }
-input#Harken:checked ~ main .Harken{
+
+input#Harken:checked ~ main .Harken {
     display: initial;
 }
-input#Allen:checked ~ main .Allen{
+
+input#Allen:checked ~ main .Allen {
     display: initial;
 }
-input#Windesign:checked ~ main .Windesign{
+
+input#Windesign:checked ~ main .Windesign {
     display: initial;
 }
-input#Zwart:checked ~ main .Zwart{
+
+input#Zwart:checked ~ main .Zwart {
     display: initial;
 }
-input#Blauw:checked ~ main .Blauw{
+
+input#Blauw:checked ~ main .Blauw {
     display: initial;
 }
-input#Roze:checked ~ main .Roze{
+
+input#Roze:checked ~ main .Roze {
     display: initial;
 }
-input#Rood:checked ~ main .Rood{
+
+input#Rood:checked ~ main .Rood {
     display: initial;
 }
-input#Aluminium:checked ~ main .Aluminium{
+
+input#Aluminium:checked ~ main .Aluminium {
     display: initial;
 }
-input#Carbon:checked ~ main .Carbon{
+
+input#Carbon:checked ~ main .Carbon {
     display: initial;
 }
-input#Inox:checked ~ main .Inox{
+
+input#Inox:checked ~ main .Inox {
     display: initial;
 }
-input#IJzer:checked ~ main .IJzer{
+
+input#IJzer:checked ~ main .IJzer {
     display: initial;
 }
+
+input#all:checked ~ main label#all,
+input#Beschikbaar:checked ~ main label#Beschikbaar,
+input#BinenkortBeschikbaar:checked ~ main label#BinenkortBeschikbaar,
+input#NietBeschikbaar:checked ~ main label#NietBeschikbaar,
+input#ILCA:checked ~ main label#ILCA,
+input#Harken:checked ~ main label#Harken,
+input#Allen:checked ~ main label#Allen,
+input#Windesign:checked ~ main label#Windesign,
+input#Zwart:checked ~ main label#Zwart,
+input#Blauw:checked ~ main label#Blauw,
+input#Roze:checked ~ main label#Roze,
+input#Rood:checked ~ main label#Rood,
+input#Aluminium:checked ~ main label#Aluminium,
+input#Carbon:checked ~ main label#Carbon,
+input#Inox:checked ~ main label#Inox,
+input#IJzer:checked ~ main label#IJzer {
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
