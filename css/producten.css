@@ -60,5 +60,18 @@ article section {
                           "star   cart";
 }
 
+.filters ul{
+    list-style: none;
+    padding-left: 10px;
+}
 
+.all{
+    display: none;
+}
 
+.filters ul li input[id="all"]:checked ~ .all{
+    display: inline-block;
+}
+.filters ul li ul li input[id="Beschikbaar"]:checked ~ .Beschikbaar{
+    display: inline-block;
+}

@@ -31,79 +31,134 @@
     </nav>
 </header>
 <main class="container">
-    <aside class="item-a"><h2>Filters</h2>
+    <aside class="item-a filters">
+        <h2>Filters</h2>
         <ul>
+            <li>
+                <input checked="checked" type="radio" name="filter" id="all">
+                <label for="all">Alle producten</label>
+            </li>
             <li>Prijs</li>
             <li>Beschikbaarheid
                 <ul>
-                    <li>Beschikbaar</li>
-                    <li>Binnenkort beschikbaar</li>
-                    <li>Niet beschikbaar</li>
+                    <li>
+                        <input type="radio" name="filter" id="Beschikbaar">
+                        <label for="Beschikbaar">Beschikbaar</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="BinenkortBeschikbaar">
+                        <label for="BinenkortBeschikbaar">Binnenkort beschikbaar</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="NietBeschikbaar">
+                        <label for="NietBeschikbaar">Niet beschikbaar</label>
+                    </li>
                 </ul>
             </li>
             <li>Merk
                 <ul>
-                    <li>ILCA</li>
-                    <li>Harken</li>
-                    <li>Allen</li>
-                    <li>Kalf</li>
+                    <li>
+                        <input type="radio" name="filter" id="ILCA">
+                        <label for="ILCA">ILCA</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Harken">
+                        <label for="Harken">Harken</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Allen">
+                        <label for="Allen">Allen</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Windesign">
+                        <label for="Windesign">Windesign</label>
+                    </li>
                 </ul>
             </li>
             <li>Kleur
                 <ul>
-                    <li>Zwart</li>
-                    <li>Blauw</li>
-                    <li>Roze</li>
-                    <li>Rood</li>
+                    <li>
+                        <input type="radio" name="filter" id="Zwart">
+                        <label for="Zwart">Zwart</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Blauw">
+                        <label for="Blauw">Blauw</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Roze">
+                        <label for="Roze">Roze</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Rood">
+                        <label for="Rood">Rood</label>
+                    </li>
                 </ul>
             </li>
             <li>Materiaal
                 <ul>
-                    <li>Aluminium</li>
-                    <li>Carbon</li>
-                    <li>Inox</li>
-                    <li>IJzer</li>
+                    <li>
+                        <input type="radio" name="filter" id="Aluminium">
+                        <label for="Aluminium">Aluminium</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Carbon">
+                        <label for="Carbon">Carbon</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="Inox">
+                        <label for="Inox">Inox</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="filter" id="IJzer">
+                        <label for="IJzer">IJzer</label>
+                    </li>
                 </ul>
             </li>
         </ul>
     </aside>
-    <section class="item-b"><h2 class="hideTitle">Producten</h2>
-        <article class="producten"><h3 class="nextLine" id="ILCA">ILCA</h3>
+    <section class="item-b">
+        <h2 class="hideTitle">Producten</h2>
+        <article class="producten">
+            <h3 class="nextLine" id="ILCA">ILCA</h3>
 
-            <section>
+            <section class="Beschikbaar ILCA all">
                 <a href="ILCA_Daggerboard_GRP_Detail.html">
                     <img class="pphoto"
                          src="../media/ilca-daggerboard-grp-ilc3910_6044912.jpg"
                          alt="ILCA Daggerboard GRP">
-                    <h4 class="name">ILCA Daggerboard GRP</h4></a>
+                    <h4>ILCA Daggerboard GRP</h4>
+                </a>
                 <p>&euro; 615,00</p>
                 <img class="star" src="../media/Ster.png" alt="Review voor product">
                 <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section>
+            <section class="Beschikbaar ILCA all">
                 <a href="ILCA_Rudder_Blade_GRP_Detail.html">
                     <img class="pphoto"
                          src="../media/ilca-rudder-blade-grp-ilc3920_6248465.jpg"
                          alt="ILCA rudder blade GRP">
-                    <h4>ILCA rudder blade GRP</h4></a>
+                    <h4>ILCA rudder blade GRP</h4>
+                </a>
                 <p>&euro; 370,00</p>
                 <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
                 <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section>
+            <section class="BinenkortBeschikbaar Zwart all">
                 <a href="Gorilla_sailing_laser_hangband_detail.html">
                     <img class="pphoto"
                          src="../media/gorilla-sailing-laser-hangband-gs3001_6248964.jpg"
                          alt="Gorilla sailing Laser hangband">
-                    <h4>Gorilla sailing Laser hangband</h4></a>
+                    <h4>Gorilla sailing Laser hangband</h4>
+                </a>
                 <p>&euro; 34,95</p>
                 <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
                 <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section>
+            <section class="NietBeschikbaar ILCA Harken Zwart all">
                 <img class="pphoto"
                      src="../media/ilca-traveller-block-harken-ilc5964_6249095.jpg"
                      alt="ILCA Traveller block - Harken">
@@ -113,7 +168,7 @@
                 <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section>
+            <section class="Beschikbaar ILCA Harken Zwart all">
                 <img class="pphoto"
                      src="../media/ilca-mainsheet-boom-block-harken-ilc5962_6249289.jpg"
                      alt="ILCA mainsheet boom block - Harken">
@@ -123,185 +178,202 @@
                 <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section>
+            <section class="BinenkortBeschikbaar ILCA Carbon Zwart all">
                 <img class="pphoto"
                      src="../media/ilca-6-composite-lower-ilc1635_6249401.jpg"
                      alt="ILCA 6 composite lower">
                 <h4>ILCA 6 composite lower</h4>
-                <p>&euro; 1.110,00</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img
-                    class="cart"
-                    src="../media/ShoppingCart.png"
-                    alt="Winkel kar toevoegen">
+                <p>&euro; 1.110,00</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/ilca-clew-strap-ilc4934_6249578.jpg"
-                          alt="ILCA clew strap">
+            <section class="Beschikbaar ILCA all">
+                <img class="pphoto"
+                     src="../media/ilca-clew-strap-ilc4934_6249578.jpg"
+                     alt="ILCA clew strap">
                 <h4>ILCA clew strap</h4>
-                <p>&euro; 17,50</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+                <p>&euro; 17,50</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/rwo-screw-bung-r2067_6249692.jpg"
-                          alt="RWO screw bung">
+            <section class="Beschikbaar ILCA Zwart all">
+                <img class="pphoto"
+                     src="../media/rwo-screw-bung-r2067_6249692.jpg"
+                     alt="RWO screw bung">
                 <h4>RWO screw bung</h4>
-                <p>&euro; 3,95</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 3,95</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
         </article>
-        <article class="producten"><h3 class="nextLine" id="Optimist">Optimist</h3>
+        <article class="producten">
+            <h3 class="nextLine" id="Optimist">Optimist</h3>
 
-            <section><img class="pphoto"
-                          src="../media/optiparts-vane-only-red-ex1243v_6250633.jpg"
-                          alt="Optiparts vane only - red">
+            <section class="NietBeschikbaar Rood all">
+                <img class="pphoto"
+                     src="../media/optiparts-vane-only-red-ex1243v_6250633.jpg"
+                     alt="Optiparts vane only - red">
                 <h4>Optiparts vane only - red</h4>
-                <p>&euro; 9,95</p><img class="star" src="../media/Ster.png" alt="Review voor product"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 9,95</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor product">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
-            <section><img class="pphoto"
-                          src="../media/trd-magic-optimist-trolley-trd-magic-optimist_6253444.jpg"
-                          alt="TRD magic Optimist Trolley">
+
+            <section class="Beschikbaar Aluminium all">
+                <img class="pphoto"
+                     src="../media/trd-magic-optimist-trolley-trd-magic-optimist_6253444.jpg"
+                     alt="TRD magic Optimist Trolley">
                 <h4>TRD magic Optimist Trolley</h4>
-                <p>&euro; 265,00</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img
-                        class="cart"
-                        src="../media/ShoppingCart.png"
-                        alt="Winkel kar toevoegen">
+                <p>&euro; 265,00</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/optiparts-fluitje-ex1441_6253324.jpg"
-                          alt="Optiparts fluitje">
+            <section class="Beschikbaar all">
+                <img class="pphoto"
+                     src="../media/optiparts-fluitje-ex1441_6253324.jpg"
+                     alt="Optiparts fluitje">
                 <h4>Optiparts fluitje</h4>
-                <p>&euro; 2,25</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 2,25</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/optiparts-optimist-mastring-grijs-ex1211_6253347.jpg"
-                          alt="Optiparts Optimist mastring grijs">
+            <section class="Beschikbaar all">
+                <img class="pphoto"
+                     src="../media/optiparts-optimist-mastring-grijs-ex1211_6253347.jpg"
+                     alt="Optiparts Optimist mastring grijs">
                 <h4>Optiparts Optimist mastring grijs</h4>
-                <p>&euro; 5,75</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 5,75</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/winner-maststep-complete-woms_6253566.jpg"
-                          alt="Winner maststep complete">
-                <h4>WinWinner maststep complete</h4>
-                <p>&euro; 85,00</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+            <section class="Inox BinenkortBeschikbaar all">
+                <img class="pphoto"
+                     src="../media/winner-maststep-complete-woms_6253566.jpg"
+                     alt="Winner maststep complete">
+                <h4>Winner maststep complete</h4>
+                <p>&euro; 85,00</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/windesign-clinometer-ex3008_6253382.jpg"
-                          alt="Windesign Clinometer">
+            <section class="Beschikbaar Zwart Windesign all">
+                <img class="pphoto"
+                     src="../media/windesign-clinometer-ex3008_6253382.jpg"
+                     alt="Windesign Clinometer">
                 <h4>Windesign Clinometer</h4>
-                <p>&euro; 8,75</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 8,75</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/windesign-magnetic-protest-kit-ex2650_6253421.jpg"
-                          alt="Windesign magnetic protest kit">
+            <section class="Beschikbaar Zwart Blauw Rood Windesign all">
+                <img class="pphoto"
+                     src="../media/windesign-magnetic-protest-kit-ex2650_6253421.jpg"
+                     alt="Windesign magnetic protest kit">
                 <h4>Windesign magnetic protest kit</h4>
-                <p>&euro; 42,50</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+                <p>&euro; 42,50</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/universal-trolley-wheel-pink-75380-pi_6253476.png"
-                          alt="Universal trolley wheel - Pink">
+            <section class="NietBeschikbaar Roze all">
+                <img class="pphoto"
+                     src="../media/universal-trolley-wheel-pink-75380-pi_6253476.png"
+                     alt="Universal trolley wheel - Pink">
                 <h4>Universal trolley wheel - Pink</h4>
-                <p>&euro; 29,95</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+                <p>&euro; 29,95</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
         </article>
-        <article class="producten"><h3 class="nextLine" id="Cadet">Cadet</h3>
+        <article class="producten">
+            <h3 class="nextLine" id="Cadet">Cadet</h3>
 
-            <section><img class="pphoto"
-                          src="../media/spinnaker_pole_end.jpg"
-                          alt="Selden spinnaker pole end">
+            <section class="BinenkortBeschikbaar Zwart Aluminium all">
+                <img class="pphoto"
+                     src="../media/spinnaker_pole_end.jpg"
+                     alt="Selden spinnaker pole end">
                 <h4>Selden spinnaker pole end</h4>
-                <p>&euro; 31,00</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+                <p>&euro; 31,00</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/Spinnaker_pole.jpg"
-                          alt="Cadet Spinnaker pole">
+            <section class="Beschikbaar Inox Zwart all">
+                <img class="pphoto"
+                     src="../media/Spinnaker_pole.jpg"
+                     alt="Cadet Spinnaker pole">
                 <h4>Caddet Spinnaker pole</h4>
-                <p>&euro; 146,00</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img
-                        class="cart"
-                        src="../media/ShoppingCart.png"
-                        alt="Winkel kar toevoegen">
+                <p>&euro; 146,00</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/Cadet_trolley.jpg"
-                          alt="Practic ALU-trolley for cadet">
+            <section class="Beschikbaar Aluminium Rood all">
+                <img class="pphoto"
+                     src="../media/Cadet_trolley.jpg"
+                     alt="Practic ALU-trolley for cadet">
                 <h4>Practic ALU-trolley for Cadet</h4>
-                <p>&euro; 370,00</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img
-                        class="cart"
-                        src="../media/ShoppingCart.png"
-                        alt="Winkel kar toevoegen">
+                <p>&euro; 370,00</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/al-a4288_profile_6042252.jpg"
-                          alt="Allen standard eyestrap">
+            <section class="Beschikbaar Allen Inox all">
+                <img class="pphoto"
+                     src="../media/al-a4288_profile_6042252.jpg"
+                     alt="Allen standard eyestrap">
                 <h4>Allen standard eyestrap</h4>
-                <p>&euro; 2,04</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 2,04</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/sb-em-8-re_6042327.jpg"
-                          alt="Sailboats Marstrand 16 Plait Sheet">
+            <section class="BinenkortBeschikbaar Rood all">
+                <img class="pphoto"
+                     src="../media/sb-em-8-re_6042327.jpg"
+                     alt="Sailboats Marstrand 16 Plait Sheet">
                 <h4>Sailboats Marstrand 16 Plait Sheet</h4>
-                <p>&euro; 2,15</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 2,15</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/mg-670206_2019_6042401.jpg"
-                          alt="Trolley Axle Washer">
+            <section class="Beschikbaar IJzer all">
+                <img class="pphoto"
+                     src="../media/mg-670206_2019_6042401.jpg"
+                     alt="Trolley Axle Washer">
                 <h4>Trolley Axle Washer</h4>
-                <p>&euro; 1,25</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                           src="../media/ShoppingCart.png"
-                                                                                                           alt="Winkel kar toevoegen">
+                <p>&euro; 1,25</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/mg-392040_6042547.jpg"
-                          alt="Sail Number Glue Remover">
+            <section class="NietBeschikbaar all">
+                <img class="pphoto"
+                     src="../media/mg-392040_6042547.jpg"
+                     alt="Sail Number Glue Remover">
                 <h4>Sail Number Glue Remover</h4>
-                <p>&euro; 11,95</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+                <p>&euro; 11,95</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section><img class="pphoto"
-                          src="../media/al-a167_2015_6042631.jpg"
-                          alt="Allen Burgee">
+            <section class="Beschikbaar Allen Blauw Roze Rood Aluminium all">
+                <img class="pphoto"
+                     src="../media/al-a167_2015_6042631.jpg"
+                     alt="Allen Burgee">
                 <h4>Allen Burgee</h4>
-                <p>&euro; 12,60</p><img class="star" src="../media/Ster.png" alt="Review voor prodcut"><img class="cart"
-                                                                                                            src="../media/ShoppingCart.png"
-                                                                                                            alt="Winkel kar toevoegen">
+                <p>&euro; 12,60</p>
+                <img class="star" src="../media/Ster.png" alt="Review voor prodcut">
+                <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
         </article>
     </section>
