@@ -1,0 +1,22 @@
+.naam p:nth-child(1){
+    grid-area: naam;
+    font-size: 12px;
+}
+.naam p:nth-child(2){
+    grid-area: website;
+    justify-self: end;
+    font-size: 12px;
+}
+.naam{
+    display: grid;
+    grid-template-areas: "naam website";
+}
+a[href^="mailto"]::before {
+    content: "📧 ";
+    padding-left: 15px;
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+    padding-left: 15px;
+}
