@@ -12,6 +12,22 @@
     <link rel="stylesheet" href="../css/producten.css">
 </head>
 <body>
+<input checked="checked" type="radio" name="filter" id="all">
+<input type="radio" name="filter" id="Beschikbaar">
+<input type="radio" name="filter" id="BinenkortBeschikbaar">
+<input type="radio" name="filter" id="NietBeschikbaar">
+<input type="radio" name="filter" id="ILCA">
+<input type="radio" name="filter" id="Harken">
+<input type="radio" name="filter" id="Allen">
+<input type="radio" name="filter" id="Windesign">
+<input type="radio" name="filter" id="Zwart">
+<input type="radio" name="filter" id="Blauw">
+<input type="radio" name="filter" id="Roze">
+<input type="radio" name="filter" id="Rood">
+<input type="radio" name="filter" id="Aluminium">
+<input type="radio" name="filter" id="Carbon">
+<input type="radio" name="filter" id="Inox">
+<input type="radio" name="filter" id="IJzer">
 <header class="nav">
     <h1 class="hideTitle">Alle producten</h1>
     <img class="nav" src="../media/logo.png" alt="Logo">
@@ -35,82 +51,66 @@
         <h2>Filters</h2>
         <ul>
             <li>
-                <input checked="checked" type="radio" name="filter" id="all">
                 <label for="all">Alle producten</label>
             </li>
             <li>Prijs</li>
-            <li>Beschikbaarheid
+            <li>Beschikbaarheid:
                 <ul>
                     <li>
-                        <input type="radio" name="filter" id="Beschikbaar">
                         <label for="Beschikbaar">Beschikbaar</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="BinenkortBeschikbaar">
                         <label for="BinenkortBeschikbaar">Binnenkort beschikbaar</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="NietBeschikbaar">
                         <label for="NietBeschikbaar">Niet beschikbaar</label>
                     </li>
                 </ul>
             </li>
-            <li>Merk
+            <li>Merk:
                 <ul>
                     <li>
-                        <input type="radio" name="filter" id="ILCA">
                         <label for="ILCA">ILCA</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Harken">
                         <label for="Harken">Harken</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Allen">
                         <label for="Allen">Allen</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Windesign">
                         <label for="Windesign">Windesign</label>
                     </li>
                 </ul>
             </li>
-            <li>Kleur
+            <li>Kleur:
                 <ul>
                     <li>
-                        <input type="radio" name="filter" id="Zwart">
                         <label for="Zwart">Zwart</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Blauw">
                         <label for="Blauw">Blauw</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Roze">
                         <label for="Roze">Roze</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Rood">
                         <label for="Rood">Rood</label>
                     </li>
                 </ul>
             </li>
-            <li>Materiaal
+            <li>Materiaal:
                 <ul>
                     <li>
-                        <input type="radio" name="filter" id="Aluminium">
                         <label for="Aluminium">Aluminium</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Carbon">
                         <label for="Carbon">Carbon</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="Inox">
                         <label for="Inox">Inox</label>
                     </li>
                     <li>
-                        <input type="radio" name="filter" id="IJzer">
                         <label for="IJzer">IJzer</label>
                     </li>
                 </ul>
@@ -120,7 +120,7 @@
     <section class="item-b">
         <h2 class="hideTitle">Producten</h2>
         <article class="producten">
-            <h3 class="nextLine" id="ILCA">ILCA</h3>
+            <h3 class="nextLine all Beschikbaar ILCA BinenkortBeschikbaar Zwart NietBeschikbaar Harken Carbon" id="ILCA">ILCA</h3>
 
             <section class="Beschikbaar ILCA all">
                 <a href="ILCA_Daggerboard_GRP_Detail.html">
@@ -134,7 +134,7 @@
                 <img class="cart" src="../media/ShoppingCart.png" alt="Winkel kar toevoegen">
             </section>
 
-            <section class="Beschikbaar ILCA all">
+            <section class="all Beschikbaar ILCA">
                 <a href="ILCA_Rudder_Blade_GRP_Detail.html">
                     <img class="pphoto"
                          src="../media/ilca-rudder-blade-grp-ilc3920_6248465.jpg"
@@ -210,7 +210,7 @@
 
         </article>
         <article class="producten">
-            <h3 class="nextLine" id="Optimist">Optimist</h3>
+            <h3 class="nextLine NietBeschikbaar Rood all Beschikbaar Aluminium Inox Zwart Windesign Blauw Roze BinenkortBeschikbaar" id="Optimist">Optimist</h3>
 
             <section class="NietBeschikbaar Rood all">
                 <img class="pphoto"
@@ -294,7 +294,7 @@
 
         </article>
         <article class="producten">
-            <h3 class="nextLine" id="Cadet">Cadet</h3>
+            <h3 class="nextLine all BinenkortBeschikbaar Aluminium Beschikbaar Inox Zwart Rood Allen IJzer Blauw Roze" id="Cadet">Cadet</h3>
 
             <section class="BinenkortBeschikbaar Zwart Aluminium all">
                 <img class="pphoto"

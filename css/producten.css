@@ -64,14 +64,65 @@ article section {
     list-style: none;
     padding-left: 10px;
 }
+.filters ul li ul li{
+    padding-left: 10px;
+}
+
+input{
+    display: none;
+}
 
 .all{
     display: none;
 }
 
-.filters ul li input[id="all"]:checked ~ .all{
+input#all:checked ~ main .all{
     display: inline-block;
+    align-self: start;
 }
-.filters ul li ul li input[id="Beschikbaar"]:checked ~ .Beschikbaar{
-    display: inline-block;
+input#Beschikbaar:checked ~ main .Beschikbaar{
+    display: initial;
+    align-self: flex-start;
+}
+input#BinenkortBeschikbaar:checked ~ main .BinenkortBeschikbaar{
+    display: initial;
+}
+input#NietBeschikbaar:checked ~ main .NietBeschikbaar{
+    display: initial;
+}
+input#ILCA:checked ~ main .ILCA{
+    display: initial;
+}
+input#Harken:checked ~ main .Harken{
+    display: initial;
+}
+input#Allen:checked ~ main .Allen{
+    display: initial;
+}
+input#Windesign:checked ~ main .Windesign{
+    display: initial;
+}
+input#Zwart:checked ~ main .Zwart{
+    display: initial;
+}
+input#Blauw:checked ~ main .Blauw{
+    display: initial;
+}
+input#Roze:checked ~ main .Roze{
+    display: initial;
+}
+input#Rood:checked ~ main .Rood{
+    display: initial;
+}
+input#Aluminium:checked ~ main .Aluminium{
+    display: initial;
+}
+input#Carbon:checked ~ main .Carbon{
+    display: initial;
+}
+input#Inox:checked ~ main .Inox{
+    display: initial;
+}
+input#IJzer:checked ~ main .IJzer{
+    display: initial;
 }
