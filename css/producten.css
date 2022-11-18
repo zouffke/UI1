@@ -96,7 +96,7 @@ input#NietBeschikbaar:checked ~ main .NietBeschikbaar {
     display: initial;
 }
 
-input#ILCA:checked ~ main .ILCA {
+input#Ilca:checked ~ main .Ilca {
     display: initial;
 }
 
@@ -144,22 +144,22 @@ input#IJzer:checked ~ main .IJzer {
     display: initial;
 }
 
-input#all:checked ~ main label#all,
-input#Beschikbaar:checked ~ main label#Beschikbaar,
-input#BinenkortBeschikbaar:checked ~ main label#BinenkortBeschikbaar,
-input#NietBeschikbaar:checked ~ main label#NietBeschikbaar,
-input#ILCA:checked ~ main label#ILCA,
-input#Harken:checked ~ main label#Harken,
-input#Allen:checked ~ main label#Allen,
-input#Windesign:checked ~ main label#Windesign,
-input#Zwart:checked ~ main label#Zwart,
-input#Blauw:checked ~ main label#Blauw,
-input#Roze:checked ~ main label#Roze,
-input#Rood:checked ~ main label#Rood,
-input#Aluminium:checked ~ main label#Aluminium,
-input#Carbon:checked ~ main label#Carbon,
-input#Inox:checked ~ main label#Inox,
-input#IJzer:checked ~ main label#IJzer {
+input#all:checked ~ main label#lblall,
+input#Beschikbaar:checked ~ main label#lblBeschikbaar,
+input#BinenkortBeschikbaar:checked ~ main label#lblBinenkortBeschikbaar,
+input#NietBeschikbaar:checked ~ main label#lblNietBeschikbaar,
+input#Ilca:checked ~ main label#lblIlca,
+input#Harken:checked ~ main label#lblHarken,
+input#Allen:checked ~ main label#lblAllen,
+input#Windesign:checked ~ main label#lblWindesign,
+input#Zwart:checked ~ main label#lblZwart,
+input#Blauw:checked ~ main label#lblBlauw,
+input#Roze:checked ~ main label#lblRoze,
+input#Rood:checked ~ main label#lblRood,
+input#Aluminium:checked ~ main label#lblAluminium,
+input#Carbon:checked ~ main label#lblCarbon,
+input#Inox:checked ~ main label#lblInox,
+input#IJzer:checked ~ main label#lblIJzer {
     text-decoration-line: underline;
     font-weight: bold;
 }
