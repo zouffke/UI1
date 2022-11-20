@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Aankopen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/Site.css">
+    <link rel="stylesheet" href="../css/Personalisering.css">
+</head>
+<body>
+<h1 class="hideTitle">Personaliserings formulier</h1>
+<header class="nav">
+    <img class="nav" src="../media/logo.png" alt="Logo">
+    <nav class="nav"><h2 class="hideTitle">Navigatie</h2>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Alle_Producten.html">Producten</a>
+                <ul class="dropdown submenu">
+                    <li><a href="Alle_Producten.html#ILCA">ILCA</a></li>
+                    <li><a href="Alle_Producten.html#Optimist">Optimist</a></li>
+                    <li><a href="Alle_Producten.html#Cadet">Cadet</a></li>
+                </ul>
+            </li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li>
+                <a class="active" href="Contact.html">Contact</a>
+                <ul class="dropdown submenu">
+                    <li><a class="active" href="Personalisering.html">Aankopen</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2 class="hideTitle">Formulier</h2>
+        <form action="Bevestiging.html" class="formGrid">
+            <label for="ProductLijst" class="productenGrid">Kies een product uit de lijst</label>
+            <input
+                    class="required productenGrid"
+                    list="producten"
+                    name="form"
+                    id="ProductLijst"
+                    required
+                    placeholder="*"
+                    autofocus
+                    autocomplete="off">
+            <datalist id="producten">
+                <option value="Gorilla sailing laser hangband">
+                <option value="ILCA Daggerboard GRP">
+                <option value="ILCA rudder blade GRP">
+            </datalist>
+
+<!--            <div class="naamGrid">-->
+            <p>Gelieve uw Naam in te vullen,</p>
+            <label for="LastName">Naam:</label>
+            <input
+                    class="required"
+                    type="text"
+                    name="form"
+                    id="LastName"
+                    required
+                    minlength="2"
+                    placeholder="*"
+                    autocomplete="on">
+            <label for="Name">Voornaam:</label>
+            <input
+                    class="required"
+                    type="text"
+                    name="form"
+                    id="Name"
+                    required
+                    minlength="4"
+                    placeholder="*"
+                    autocomplete="on">
+<!--            </div>-->
+<!--            <div class="emailGrid">-->
+            <label for="E-mail">Geef uw e-mail adres in:</label>
+            <input
+                    type="email"
+                    name="form"
+                    id="E-mail"
+                    pattern="[A-z]*[@][A-z]*[.][A-z]*"
+                    placeholder="JhonDoe@Mail.com"
+                    required
+                    autocomplete="on">
+<!--            </div>-->
+<!--            <div class="TelefoonGrid">-->
+            <label for="Telefoon">Telefoon nummer</label>
+            <input
+                    type="tel"
+                    name="form"
+                    id="Telefoon"
+                    maxlength=""
+                    autocomplete="on"
+                    value="+32 0"
+                    minlength="10">
+<!--            </div>-->
+            <p>Geef uw leveringsadres:</p>
+            <label for="Straat">Straat:</label>
+            <input
+                    type="text"
+                    name="form"
+                    id="Straat"
+                    pattern="[A-z]*"
+                    autocomplete="on">
+            <label for="Nummer">Huisnummer:</label>
+            <input
+                    type="text"
+                    name="form"
+                    id="Nummer"
+                    pattern="[0-9]*"
+                    maxlength="4"
+                    autocomplete="on"
+                    inputmode="numeric">
+            <label for="Postcode">Postcode</label>
+            <input
+                    type="text"
+                    name="form"
+                    id="Postcode"
+                    pattern="[0-9]{4}"
+                    maxlength="4"
+                    autocomplete="on">
+
+            <p>Gelieve uw noden aan te geven.</p>
+            <label for="Color">Kleur van het product:</label>
+            <input type="color" name="form" id="Color">
+            <label for="Amount">Aantal producten</label>
+            <input
+                    type="number"
+                    name="form"
+                    id="Amount"
+                    value="1"
+            >
+            <label for="Length">Lengte van het product</label>
+            <input type="text" name="form" id="Length">
+            <label for="Opmerking">Opmerkingen:</label>
+            <input
+                    type="text"
+                    id="Opmerking"
+                    name="form">
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+</main>
+</body>
+</html>

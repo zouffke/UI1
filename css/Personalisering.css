@@ -1,0 +1,21 @@
+.required::placeholder {
+    color: red;
+}
+
+.productenGrid {
+    grid-area: producten;
+}
+.naamGrid{
+    grid-area: naam;
+}
+.emailGrid{
+    grid-area: email;
+}
+.TelefoonGrid{
+    grid-area: telefoon;
+}
+
+.formGrid {
+    margin: 20px;
+    background-color: var(--silver-sand);
+}

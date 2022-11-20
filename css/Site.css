@@ -72,3 +72,6 @@ a {
 .nextLine {
     width: 100%;
 }
+label{
+    color: var(--black-coral);
+}

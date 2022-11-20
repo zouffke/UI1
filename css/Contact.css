@@ -20,3 +20,16 @@ a[href^="tel"]::before {
     content: "📞 ";
     padding-left: 15px;
 }
+
+.contacts{
+    grid-area: contact;
+}
+.form{
+    grid-area: form;
+    text-align: end;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "contact form";
+}
