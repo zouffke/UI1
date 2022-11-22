@@ -39,113 +39,163 @@
     <section>
         <h2 class="hideTitle">Formulier</h2>
         <form action="Bevestiging.html" class="formGrid">
-            <label for="ProductLijst" class="productenGrid">Kies een product uit de lijst</label>
+            <div class="productenGrid">
+                <label for="ProductLijst">Kies een product uit de lijst</label>
+                <input
+                        class="required"
+                        list="producten"
+                        name="form"
+                        id="ProductLijst"
+                        required
+                        placeholder="*"
+                        autofocus
+                        autocomplete="off">
+                <datalist id="producten">
+                    <option value="Gorilla sailing laser hangband">
+                    <option value="ILCA Daggerboard GRP">
+                    <option value="ILCA rudder blade GRP">
+                </datalist>
+            </div>
+            <div class="naamGrid">
+                <p>Gelieve uw Naam in te vullen,</p>
+                <div class="Names">
+                    <div>
+                        <label for="LastName" id="lblLastName">Naam:</label>
+                        <input
+                                class="required"
+                                type="text"
+                                name="form"
+                                id="LastName"
+                                required
+                                minlength="2"
+                                placeholder="*"
+                                autocomplete="on"
+                                size="20">
+                    </div>
+                    <div>
+                        <label for="Name" id="lblName">Voornaam:</label>
+                        <input
+                                class="required"
+                                type="text"
+                                name="form"
+                                id="Name"
+                                required
+                                minlength="4"
+                                placeholder="*"
+                                autocomplete="on"
+                                size="20">
+                    </div>
+                </div>
+            </div>
+            <div class="emailGrid">
+                <label for="E-mail">Geef uw e-mail adres in:</label>
+                <input
+                        type="email"
+                        name="form"
+                        id="E-mail"
+                        placeholder="Jhon.Doe@student.kdg.be"
+                        required
+                        autocomplete="on">
+            </div>
+            <div class="TelefoonGrid">
+                <label for="Telefoon">Telefoon nummer:</label>
+                <input
+                        type="tel"
+                        name="form"
+                        id="Telefoon"
+                        maxlength="18"
+                        autocomplete="on"
+                        value="+32 0"
+                        minlength="10">
+            </div>
+            <div class="adressGrid">
+                <p>Geef uw leveringsadres:</p>
+                <div class="Adress">
+                    <div>
+                        <label for="Straat">Straat:</label>
+                        <input
+                                type="text"
+                                name="form"
+                                id="Straat"
+                                pattern="[A-z]*"
+                                autocomplete="on">
+                    </div>
+                    <div>
+                        <label for="Nummer">Huisnummer:</label>
+                        <input
+                                type="text"
+                                name="form"
+                                id="Nummer"
+                                pattern="[0-9]*"
+                                maxlength="4"
+                                autocomplete="on">
+                    </div>
+                    <div>
+                        <label for="Postcode">Postcode:</label>
+                        <input
+                                type="text"
+                                name="form"
+                                id="Postcode"
+                                pattern="[0-9]{4}"
+                                maxlength="4"
+                                autocomplete="on">
+                    </div>
+                </div>
+            </div>
+            <div class="customGrid">
+                <p>Gelieve uw noden aan te geven.</p>
+                <div class="Customs">
+                    <div>
+                        <label for="Color">Kleur van het product:</label>
+                        <input
+                                name="form"
+                                id="Color"
+                                list="kleuren"
+                                autocomplete="off"
+                                placeholder="Keuze uit de lijst">
+                        <datalist id="kleuren">
+                            <option value="Rood">
+                            <option value="Blauw">
+                            <option value="Zwart">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="Amount">Aantal producten:</label>
+                        <input
+                                type="number"
+                                name="form"
+                                id="Amount"
+                                value="1">
+                    </div>
+                    <div>
+                        <label for="Size">maat van het product:</label>
+                        <input
+                                type="text"
+                                name="form"
+                                id="Size"
+                                placeholder="Maten op de detail pagina">
+                    </div>
+                </div>
+            </div>
+            <div class="opmerkingGrid">
+                <label for="Opmerking">Opmerkingen:</label>
+                <textarea
+                        id="Opmerking"
+                        name="form"
+                        rows="5"
+                        cols="30"
+                spellcheck="true"
+                ></textarea>
+            </div>
             <input
-                    class="required productenGrid"
-                    list="producten"
-                    name="form"
-                    id="ProductLijst"
-                    required
-                    placeholder="*"
-                    autofocus
-                    autocomplete="off">
-            <datalist id="producten">
-                <option value="Gorilla sailing laser hangband">
-                <option value="ILCA Daggerboard GRP">
-                <option value="ILCA rudder blade GRP">
-            </datalist>
+                    type="submit"
+                    class="submitGrid"
+                    id="Submit">
+            <input
+                    type="reset"
+                    class="resetGrid"
+                    id="Reset">
 
-<!--            <div class="naamGrid">-->
-            <p>Gelieve uw Naam in te vullen,</p>
-            <label for="LastName">Naam:</label>
-            <input
-                    class="required"
-                    type="text"
-                    name="form"
-                    id="LastName"
-                    required
-                    minlength="2"
-                    placeholder="*"
-                    autocomplete="on">
-            <label for="Name">Voornaam:</label>
-            <input
-                    class="required"
-                    type="text"
-                    name="form"
-                    id="Name"
-                    required
-                    minlength="4"
-                    placeholder="*"
-                    autocomplete="on">
-<!--            </div>-->
-<!--            <div class="emailGrid">-->
-            <label for="E-mail">Geef uw e-mail adres in:</label>
-            <input
-                    type="email"
-                    name="form"
-                    id="E-mail"
-                    pattern="[A-z]*[@][A-z]*[.][A-z]*"
-                    placeholder="JhonDoe@Mail.com"
-                    required
-                    autocomplete="on">
-<!--            </div>-->
-<!--            <div class="TelefoonGrid">-->
-            <label for="Telefoon">Telefoon nummer</label>
-            <input
-                    type="tel"
-                    name="form"
-                    id="Telefoon"
-                    maxlength=""
-                    autocomplete="on"
-                    value="+32 0"
-                    minlength="10">
-<!--            </div>-->
-            <p>Geef uw leveringsadres:</p>
-            <label for="Straat">Straat:</label>
-            <input
-                    type="text"
-                    name="form"
-                    id="Straat"
-                    pattern="[A-z]*"
-                    autocomplete="on">
-            <label for="Nummer">Huisnummer:</label>
-            <input
-                    type="text"
-                    name="form"
-                    id="Nummer"
-                    pattern="[0-9]*"
-                    maxlength="4"
-                    autocomplete="on"
-                    inputmode="numeric">
-            <label for="Postcode">Postcode</label>
-            <input
-                    type="text"
-                    name="form"
-                    id="Postcode"
-                    pattern="[0-9]{4}"
-                    maxlength="4"
-                    autocomplete="on">
-
-            <p>Gelieve uw noden aan te geven.</p>
-            <label for="Color">Kleur van het product:</label>
-            <input type="color" name="form" id="Color">
-            <label for="Amount">Aantal producten</label>
-            <input
-                    type="number"
-                    name="form"
-                    id="Amount"
-                    value="1"
-            >
-            <label for="Length">Lengte van het product</label>
-            <input type="text" name="form" id="Length">
-            <label for="Opmerking">Opmerkingen:</label>
-            <input
-                    type="text"
-                    id="Opmerking"
-                    name="form">
-
-            <input type="submit">
-            <input type="reset">
         </form>
     </section>
 </main>

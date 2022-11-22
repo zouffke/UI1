@@ -28,6 +28,10 @@ a[href^="tel"]::before {
     grid-area: form;
     text-align: end;
 }
+.form img{
+    height: 50%;
+    width: 50%;
+}
 
 .grid{
     display: grid;

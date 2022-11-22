@@ -5,17 +5,159 @@
 .productenGrid {
     grid-area: producten;
 }
-.naamGrid{
+
+.productenGrid label {
+    margin: 0 0 0 5px;
+}
+
+.productenGrid input {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.naamGrid .Names {
+    grid-area: Name;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.naamGrid p {
+    grid-area: p;
+    margin: 0 0 0 5px;
+}
+
+.naamGrid {
     grid-area: naam;
+    align-self: start;
+    display: grid;
+    grid-template-areas:
+            "p"
+            "Name";
+    row-gap: 5px;
 }
-.emailGrid{
+
+.emailGrid label {
+    grid-area: lbl;
+}
+
+.emailGrid input {
+    grid-area: input;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.emailGrid {
     grid-area: email;
+    display: grid;
+    grid-template-areas:
+            "lbl"
+            "input";
+    row-gap: 5px;
 }
-.TelefoonGrid{
+
+.TelefoonGrid label {
+    grid-area: lbl;
+}
+
+.TelefoonGrid input {
+    grid-area: input;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.TelefoonGrid {
     grid-area: telefoon;
+    display: grid;
+    grid-template-areas:
+            "lbl"
+            "input";
+    justify-self: center;
+}
+
+.adressGrid p {
+    grid-area: p;
+    margin: 0 0 0 5px;
+}
+
+.adressGrid .Adress {
+    grid-area: adress;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.adressGrid {
+    grid-area: adress;
+    display: grid;
+    grid-template-areas:
+            "p"
+            "adress";
+    row-gap: 5px;
+}
+
+.customGrid p{
+    grid-area: p;
+    margin: 0 0 0 5px;
+}
+
+.customGrid .Customs{
+    grid-area: input;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.customGrid {
+    grid-area: custom;
+    display: grid;
+    grid-template-areas:
+            "p"
+            "input";
+    row-gap: 5px;
+}
+
+.opmerkingGrid label{
+    grid-area: lbl;
+    margin: 0 0 0 5px
+}
+.opmerkingGrid textarea{
+    grid-area: text;
+    resize: none;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.opmerkingGrid {
+    grid-area: opmerking;
+    display: grid;
+    grid-template-areas:
+            "lbl"
+            "text";
+    row-gap: 5px;
+}
+
+
+.submitGrid {
+    grid-area: submit;
+    margin-top: 15px;
+    justify-self: start;
+    width: 25%;
+}
+
+.resetGrid {
+    margin-top: 15px;
+    grid-area: reset;
+    justify-self: end;
 }
 
 .formGrid {
-    margin: 20px;
+    display: grid;
+    margin: 50px;
     background-color: var(--silver-sand);
+    grid-template-areas:
+            "producten . ."
+            "naam email telefoon"
+            "adress adress adress"
+            "custom custom custom"
+            "opmerking opmerking opmerking"
+            "submit . reset";
+    row-gap: 30px;
 }
