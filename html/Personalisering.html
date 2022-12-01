@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="../css/Site.css">
     <link rel="stylesheet" href="../css/Personalisering.css">
+    <script src="../script/form_validation.js" defer></script>
 </head>
 <body>
 <h1 class="hideTitle">Personaliserings formulier</h1>
@@ -70,7 +71,8 @@
                                 minlength="2"
                                 placeholder="*"
                                 autocomplete="on"
-                                size="20">
+                                size="20"
+                                value="test">
                     </div>
                     <div>
                         <label for="Name" id="lblName">Voornaam:</label>
@@ -168,11 +170,11 @@
                                 value="1">
                     </div>
                     <div>
-                        <label for="Size">maat van het product:</label>
+                        <label for="Material">materiaal van het product:</label>
                         <input
                                 type="text"
                                 name="form"
-                                id="Size"
+                                id="Material"
                                 placeholder="Maten op de detail pagina">
                     </div>
                 </div>
