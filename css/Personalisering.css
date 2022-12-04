@@ -94,12 +94,12 @@
     row-gap: 5px;
 }
 
-.customGrid p{
+.customGrid p {
     grid-area: p;
     margin: 0 0 0 5px;
 }
 
-.customGrid .Customs{
+.customGrid .Customs {
     grid-area: input;
     display: inline-flex;
     justify-content: space-around;
@@ -114,11 +114,12 @@
     row-gap: 5px;
 }
 
-.opmerkingGrid label{
+.opmerkingGrid label {
     grid-area: lbl;
     margin: 0 0 0 5px
 }
-.opmerkingGrid textarea{
+
+.opmerkingGrid textarea {
     grid-area: text;
     resize: none;
     margin-right: 15px;
@@ -166,7 +167,7 @@ div #LastNameSpan, #NameSpan, #EmailSpan, #ProductSpan {
     color: red;
 }
 
-.validInput{
+.validInput {
     background-color: #04AA6D;
     color: white;
 }

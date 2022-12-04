@@ -39,13 +39,13 @@
 <main>
     <section>
         <h2 class="hideTitle">Formulier</h2>
-        <form action="Bevestiging.html" class="formGrid">
+        <form action="Bevestiging.html" class="formGrid" method="get">
             <div class="productenGrid">
                 <label for="ProductLijst">Kies een product uit de lijst</label>
                 <input
                         class="required"
                         list="producten"
-                        name="form"
+                        name="product"
                         id="ProductLijst"
                         required
                         placeholder="*"
@@ -66,7 +66,7 @@
                         <input
                                 class="required"
                                 type="text"
-                                name="form"
+                                name="lastname"
                                 id="LastName"
                                 required
                                 minlength="2"
@@ -80,7 +80,7 @@
                         <input
                                 class="required"
                                 type="text"
-                                name="form"
+                                name="name"
                                 id="Name"
                                 required
                                 minlength="4"
@@ -95,7 +95,7 @@
                 <label for="E-mail">Geef uw e-mail adres in:</label>
                 <input
                         type="email"
-                        name="form"
+                        name="email"
                         id="E-mail"
                         placeholder="Jhon.Doe@student.kdg.be"
                         required
@@ -106,7 +106,7 @@
                 <label for="Telefoon">Telefoon nummer:</label>
                 <input
                         type="tel"
-                        name="form"
+                        name="telefoon"
                         id="Telefoon"
                         maxlength="18"
                         autocomplete="on"
@@ -120,16 +120,15 @@
                         <label for="Straat">Straat:</label>
                         <input
                                 type="text"
-                                name="form"
+                                name="straat"
                                 id="Straat"
-                                pattern="[A-z]*"
                                 autocomplete="on">
                     </div>
                     <div>
                         <label for="Nummer">Huisnummer:</label>
                         <input
                                 type="text"
-                                name="form"
+                                name="nummer"
                                 id="Nummer"
                                 pattern="[0-9]*"
                                 maxlength="4"
@@ -139,7 +138,7 @@
                         <label for="Postcode">Postcode:</label>
                         <input
                                 type="text"
-                                name="form"
+                                name="postcode"
                                 id="Postcode"
                                 pattern="[0-9]{4}"
                                 maxlength="4"
@@ -153,7 +152,7 @@
                     <div>
                         <label for="Color">Kleur van het product:</label>
                         <input
-                                name="form"
+                                name="color"
                                 id="Color"
                                 list="kleuren"
                                 autocomplete="off"
@@ -168,7 +167,7 @@
                         <label for="Amount">Aantal producten:</label>
                         <input
                                 type="number"
-                                name="form"
+                                name="aantal"
                                 id="Amount"
                                 value="1"
                                 required>
@@ -177,7 +176,7 @@
                         <label for="Material">materiaal van het product:</label>
                         <input
                                 type="text"
-                                name="form"
+                                name="materiaal"
                                 id="Material"
                                 placeholder="Materiaal op detail pagina">
                     </div>
@@ -187,7 +186,7 @@
                 <label for="Opmerking">Opmerkingen:</label>
                 <textarea
                         id="Opmerking"
-                        name="form"
+                        name="opmerking"
                         rows="5"
                         cols="30"
                         spellcheck="true"

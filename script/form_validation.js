@@ -52,7 +52,8 @@ function lastNameVal() {
         console.log(form.value);
         span.innerHTML = "";
         form.setAttribute("class", "validInput");
-        return true;
+
+        return form.value;
     }
 }
 
@@ -78,7 +79,7 @@ function nameVal() {
         console.log(form.value);
         span.innerHTML = "";
         form.setAttribute("class", "validInput");
-        return true;
+        return form.value;
     }
 }
 
@@ -107,7 +108,7 @@ function mailVal() {
         span.innerHTML = "";
         console.log(form.value);
         form.setAttribute("class", "validInput")
-        return true;
+        return form.value;
     } else {
         span.innerHTML = "Email adres is niet van het correcte type";
         form.removeAttribute("class", "validInput");
@@ -129,6 +130,6 @@ function productVal() {
         return false;
     } else {
         span.innerHTML = "";
-        return true;
+        return form.value;
     }
 }
