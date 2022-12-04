@@ -56,6 +56,7 @@
                     <option value="ILCA Daggerboard GRP">
                     <option value="ILCA rudder blade GRP">
                 </datalist>
+                <div id="ProductSpan"></div>
             </div>
             <div class="naamGrid">
                 <p>Gelieve uw Naam in te vullen,</p>
@@ -71,8 +72,8 @@
                                 minlength="2"
                                 placeholder="*"
                                 autocomplete="on"
-                                size="20"
-                                value="test">
+                                size="20">
+                        <div id="LastNameSpan"></div>
                     </div>
                     <div>
                         <label for="Name" id="lblName">Voornaam:</label>
@@ -86,6 +87,7 @@
                                 placeholder="*"
                                 autocomplete="on"
                                 size="20">
+                        <div id="NameSpan"></div>
                     </div>
                 </div>
             </div>
@@ -98,6 +100,7 @@
                         placeholder="Jhon.Doe@student.kdg.be"
                         required
                         autocomplete="on">
+                <div id="EmailSpan"></div>
             </div>
             <div class="TelefoonGrid">
                 <label for="Telefoon">Telefoon nummer:</label>
@@ -167,7 +170,8 @@
                                 type="number"
                                 name="form"
                                 id="Amount"
-                                value="1">
+                                value="1"
+                                required>
                     </div>
                     <div>
                         <label for="Material">materiaal van het product:</label>
@@ -175,7 +179,7 @@
                                 type="text"
                                 name="form"
                                 id="Material"
-                                placeholder="Maten op de detail pagina">
+                                placeholder="Materiaal op detail pagina">
                     </div>
                 </div>
             </div>

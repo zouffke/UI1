@@ -161,3 +161,12 @@
             "submit . reset";
     row-gap: 30px;
 }
+
+div #LastNameSpan, #NameSpan, #EmailSpan, #ProductSpan {
+    color: red;
+}
+
+.validInput{
+    background-color: #04AA6D;
+    color: white;
+}
