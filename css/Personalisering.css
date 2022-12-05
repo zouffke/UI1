@@ -1,4 +1,4 @@
-.required::placeholder {
+#ProductLijst::placeholder, #LastName::placeholder, #Name::placeholder {
     color: red;
 }
 

@@ -42,11 +42,11 @@ function lastNameVal() {
 
     if (form.value.length < 2) {
         span.innerHTML = "Gelieve een waarde in te geven";
-        form.removeAttribute("class", "validInput");
+        form.removeAttribute("class");
         return false;
     } else if (form.value.includes(" ")) {
         span.innerHTML = "Geen spaties aub";
-        form.removeAttribute("class", "validInput");
+        form.removeAttribute("class");
         return false;
     } else {
         console.log(form.value);
@@ -69,11 +69,11 @@ function nameVal() {
 
     if (form.value.length < 2) {
         span.innerHTML = "Gelieve een waarde in te geven";
-        form.removeAttribute("class", "validInput");
+        form.removeAttribute("class");
         return false;
     } else if (form.value.includes(" ")) {
         span.innerHTML = "Geen spaties aub";
-        form.removeAttribute("class", "validInput");
+        form.removeAttribute("class");
         return false;
     } else {
         console.log(form.value);
@@ -102,7 +102,7 @@ function mailVal() {
 
     if (form.value.length < 2) {
         span.innerHTML = "Gelieve een waarde in te geven";
-        form.removeAttribute("class", "validInput");
+        form.removeAttribute("class");
         return false;
     } else if (correct) {
         span.innerHTML = "";
