@@ -16,20 +16,22 @@ let valueAantal = searchParams.get("aantal");
 let valueMat = searchParams.get("materiaal");
 let valueText = searchParams.get("opmerking");
 
-let spanProduct = document.getElementById("ProductBevestiging");
-let spanLastName = document.getElementById("NaamBevestiging");
-let spanName = document.getElementById("VoornaamBevestiging");
-let spanMail = document.getElementById("EmailBevestiging");
-let spanTel = document.getElementById("TelefoonBevestiging");
-let spanStraat = document.getElementById("StraatBevestiging");
-let spanNummer = document.getElementById("NummerBevestiging");
-let spanCode = document.getElementById("PostcodeBevestiging");
-let spanColor = document.getElementById("KleurBevestiging");
-let spanAantal = document.getElementById("AantalBevestiging");
-let spanMat = document.getElementById("MateriaalBevestiging");
-let spanText = document.getElementById("OpmerkingBevestiging");
+
 
 function INIT() {
+    let spanProduct = document.getElementById("ProductBevestiging");
+    let spanLastName = document.getElementById("NaamBevestiging");
+    let spanName = document.getElementById("VoornaamBevestiging");
+    let spanMail = document.getElementById("EmailBevestiging");
+    let spanTel = document.getElementById("TelefoonBevestiging");
+    let spanStraat = document.getElementById("StraatBevestiging");
+    let spanNummer = document.getElementById("NummerBevestiging");
+    let spanCode = document.getElementById("PostcodeBevestiging");
+    let spanColor = document.getElementById("KleurBevestiging");
+    let spanAantal = document.getElementById("AantalBevestiging");
+    let spanMat = document.getElementById("MateriaalBevestiging");
+    let spanText = document.getElementById("OpmerkingBevestiging");
+
     spanProduct.innerHTML = "Uw product:<br>" + "&emsp;" + valueProduct;
     spanLastName.innerHTML = "Naam:<br>" + "&emsp;" + valueLastName;
     spanName.innerHTML = "Voornaam:<br>" + "&emsp;" + valueName;
