@@ -8,8 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="../css/Bevestiging.css">
     <link rel="stylesheet" href="../css/Site.css">
+    <script src="../script/dyn_data.js" defer></script>
     <script src="../script/Form_results.js" defer></script>
+    <script src="../script/dyn_result.js" defer></script>
 </head>
 <body>
 <h1 class="hideTitle">Bevestiging van bestelling</h1>
@@ -36,7 +39,7 @@
     </nav>
 </header>
 <main>
-    <section>
+    <section class="detail">
         <h2>Bevestiging van uw bestelling</h2>
         <div id="ProductBevestiging"></div>
         <div id="NaamBevestiging"></div>
@@ -50,6 +53,12 @@
         <div id="AantalBevestiging"></div>
         <div id="MateriaalBevestiging"></div>
         <div id="OpmerkingBevestiging"></div>
+    </section>
+    <section class="ficheGrid">
+        <h2 class="hideTitle">product fiche</h2>
+        <span id="fiche">
+
+        </span>
     </section>
 </main>
 </body>

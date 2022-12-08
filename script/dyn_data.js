@@ -15,7 +15,7 @@ const producten = [
         materiaalId: null,
         img: "../media/ilca-daggerboard-grp-ilc3910_6044912.jpg",
         naam: "ILCA Daggerboard GRP",
-        price: "&euro; 615,00"
+        price: "615,00"
     },
     {
         beschikbaarId: 0,
@@ -24,7 +24,7 @@ const producten = [
         materiaalId: null,
         img: "../media/ilca-rudder-blade-grp-ilc3920_6248465.jpg",
         naam: "ILCA rudder blade GRP",
-        price: "&euro; 370,00"
+        price: 370.00
     },
     {
         beschikbaarId: 1,
@@ -33,7 +33,7 @@ const producten = [
         materiaalId: null,
         img: "../media/gorilla-sailing-laser-hangband-gs3001_6248964.jpg",
         naam: "Gorilla sailing Laser hangband",
-        price: "&euro; 34,95"
+        price: 34.95
     },
     {
         beschikbaarId: 2,
@@ -42,7 +42,7 @@ const producten = [
         materiaalId: null,
         img: "../media/ilca-traveller-block-harken-ilc5964_6249095.jpg",
         naam: "ILCA Traveller block - Harken",
-        price: "&euro; 52,50"
+        price: 52.50
     },
     {
         beschikbaarId: 0,
@@ -51,7 +51,7 @@ const producten = [
         materiaalId: null,
         img: "../media/ilca-mainsheet-boom-block-harken-ilc5962_6249289.jpg",
         naam: "ILCA mainsheet boom block - Harken",
-        price: "&euro; 16,50"
+        price: 16.50
     },
     {
         beschikbaarId: 1,
@@ -60,7 +60,7 @@ const producten = [
         materiaalId: 1,
         img: "../media/ilca-6-composite-lower-ilc1635_6249401.jpg",
         naam: "ILCA 6 composite lower",
-        price: "&euro; 1.110,00"
+        price: 1110.00
     },
     {
         beschikbaarId: 0,
@@ -69,7 +69,7 @@ const producten = [
         materiaalId: null,
         img: "../media/ilca-clew-strap-ilc4934_6249578.jpg",
         naam: "ILCA clew strap",
-        price: "&euro; 17,50"
+        price: 17.50
     },
     {
         beschikbaarId: 0,
@@ -78,7 +78,7 @@ const producten = [
         materiaalId: null,
         img: "../media/rwo-screw-bung-r2067_6249692.jpg",
         naam: "RWO screw bung",
-        price: "&euro; 3,95"
+        price: 3.95
     },
     {
         beschikbaarId: 2,
@@ -87,7 +87,7 @@ const producten = [
         materiaalId: null,
         img: "../media/optiparts-vane-only-red-ex1243v_6250633.jpg",
         naam: "Optiparts vane only - red",
-        price: "&euro; 9,95"
+        price: 9.95
     },
     {
         beschikbaarId: 0,
@@ -96,7 +96,7 @@ const producten = [
         materiaalId: 0,
         img: "../media/trd-magic-optimist-trolley-trd-magic-optimist_6253444.jpg",
         naam: "TRD magic Optimist Trolley",
-        price: "&euro; 265,00"
+        price: 265.00
     },
     {
         beschikbaarId: 0,
@@ -105,7 +105,7 @@ const producten = [
         materiaalId: null,
         img: "../media/optiparts-fluitje-ex1441_6253324.jpg",
         naam: "Optiparts fluitje",
-        price: "&euro; 2,25"
+        price: 2.25
     },
     {
         beschikbaarId: 0,
@@ -114,7 +114,7 @@ const producten = [
         materiaalId: null,
         img: "../media/optiparts-optimist-mastring-grijs-ex1211_6253347.jpg",
         naam: "Optiparts Optimist mastring grijs",
-        price: "&euro; 5,75"
+        price: 5.75
     },
     {
         beschikbaarId: 1,
@@ -123,7 +123,7 @@ const producten = [
         materiaalId: 2,
         img: "../media/winner-maststep-complete-woms_6253566.jpg",
         naam: "Winner maststep complete",
-        price: "&euro; 85,00"
+        price: 85.00
     },
     {
         beschikbaarId: 0,
@@ -132,7 +132,7 @@ const producten = [
         materiaalId: null,
         img: "../media/windesign-clinometer-ex3008_6253382.jpg",
         naam: "Windesign Clinometer",
-        price: "&euro; 8,75"
+        price: 8.75
     },
     {
         beschikbaarId: 0,
@@ -141,7 +141,7 @@ const producten = [
         materiaalId: null,
         img: "../media/windesign-magnetic-protest-kit-ex2650_6253421.jpg",
         naam: "Windesign magnetic protest kit",
-        price: "&euro; 42,50"
+        price: 42.50
     },
     {
         beschikbaarId: 2,
@@ -150,7 +150,7 @@ const producten = [
         materiaalId: null,
         img: "../media/universal-trolley-wheel-pink-75380-pi_6253476.png",
         naam: "Universal trolley wheel - Pink",
-        price: "&euro; 29,95"
+        price: 29.95
     },
     {
         beschikbaarId: 1,
@@ -159,7 +159,7 @@ const producten = [
         materiaalId: 0,
         img: "../media/spinnaker_pole_end.jpg",
         naam: "Selden spinnaker pole end",
-        price: "&euro; 31,00"
+        price: 31.00
     },
     {
         beschikbaarId: 0,
@@ -168,7 +168,7 @@ const producten = [
         materiaalId: 2,
         img: "../media/Spinnaker_pole.jpg",
         naam: "Caddet Spinnaker pole",
-        price: "&euro; 146,00"
+        price: 146.00
     },
     {
         beschikbaarId: 0,
@@ -177,7 +177,7 @@ const producten = [
         materiaalId: 0,
         img: "../media/Cadet_trolley.jpg",
         naam: "Practic ALU-trolley for Cadet",
-        price: "&euro; 370,00"
+        price: 370.00
     },
     {
         beschikbaarId: 0,
@@ -186,7 +186,7 @@ const producten = [
         materiaalId: 2,
         img: "../media/al-a4288_profile_6042252.jpg",
         naam: "Allen standard eyestrap",
-        price: "&euro; 2,04"
+        price: 2.04
     },
     {
         beschikbaarId: 1,
@@ -195,7 +195,7 @@ const producten = [
         materiaalId: null,
         img: "../media/sb-em-8-re_6042327.jpg",
         naam: "Sailboats Marstrand 16 Plait Sheet",
-        price: "&euro; 2,15"
+        price: 2.15
     },
     {
         beschikbaarId: 0,
@@ -204,7 +204,7 @@ const producten = [
         materiaalId: 3,
         img: "../media/mg-670206_2019_6042401.jpg",
         naam: "Trolley Axle Washer",
-        price: "&euro; 1,25"
+        price: 1.25
     },
     {
         beschikbaarId: 2,
@@ -213,7 +213,7 @@ const producten = [
         materiaalId: null,
         img: "../media/mg-392040_6042547.jpg",
         naam: "Sail Number Glue Remover",
-        price: "&euro; 11,95"
+        price: 11.95
     },
     {
         beschikbaarId: 0,
@@ -222,9 +222,13 @@ const producten = [
         materiaalId: 0,
         img: "../media/al-a167_2015_6042631.jpg",
         naam: "Allen Burgee",
-        price: "&euro; 12,60"
+        price: 12.60
     }
 ];
+
+function rangeCheck(index) {
+    return !(index < 0 || index >= producten.length);
+}
 
 function arrayCheck(ID) {
     return Array.isArray(ID);
@@ -234,32 +238,109 @@ function nullCheck(ID) {
     return ID == null;
 }
 
-function getBeschikbaarheid(index) {
-    let product = producten[index];
-    let ID = product.beschikbaarId;
-
-    if (nullCheck(ID)) {
-        return false;
-    } else if (!arrayCheck()) {
-        return beschikbaarId[ID];
-    } else {
-        let string = "";
-
-        for(let i = 0; i < ID.length; i++){
-            string += beschikbaarId[ID[i]];
-        }
-        return string;
+function stringbuilder(ID, functie) {
+    let string = "";
+    for (let i = 0; i < ID.length; i++) {
+        string += functie[ID[i]] + " ";
     }
+    return string;
+}
 
+function getBeschikbaarheid(index) {
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        let ID = product.beschikbaarId;
+
+        if (nullCheck(ID)) {
+            return false;
+        } else if (!arrayCheck(ID)) {
+            return beschikbaarId[ID];
+        } else {
+            return stringbuilder(ID, beschikbaarId);
+        }
+    }
 }
 
 function getMerk(index) {
-    let product = producten[index];
-    let ID = product.merkId;
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        let ID = product.merkId;
 
-    return merkId[ID];
+        if (nullCheck(ID)) {
+            return false;
+        } else if (!arrayCheck(ID)) {
+            return merkId[ID];
+        } else {
+            return stringbuilder(ID, merkId);
+        }
+    }
 }
 
-function getKleur(){
+function getKleur(index) {
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        let ID = product.kleurId;
 
+        if (nullCheck(ID)) {
+            return false;
+        } else if (!arrayCheck(ID)) {
+            return kleurId[ID];
+        } else {
+            return stringbuilder(ID, kleurId);
+        }
+    }
+}
+
+function getMateriaal(index) {
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        let ID = product.materiaalId;
+
+        if (nullCheck(ID)) {
+            return false;
+        } else if (!arrayCheck(ID)) {
+            return materiaalId[ID];
+        } else {
+            return stringbuilder(ID, materiaalId);
+        }
+    }
+}
+
+function getImg(index) {
+    if (!rangeCheck(index)){
+        return false;
+    } else{
+    let product = producten[index];
+    return product.img;
+    }
+}
+
+function getNaam(index) {
+    if (!rangeCheck(index)){
+        return false;
+    } else{
+    let product = producten[index];
+    return product.naam;
+    }
+}
+
+function getPrijs(index) {
+    if (!rangeCheck(index)){
+        return false;
+    } else{
+    let product = producten[index];
+    return product.price;
+    }
+}
+
+function getRange(){
+    return producten.length;
 }

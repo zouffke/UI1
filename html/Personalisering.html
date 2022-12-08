@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../css/Site.css">
     <link rel="stylesheet" href="../css/Personalisering.css">
+    <script src="../script/dyn_data.js" defer></script>
+    <script src="../script/dyn_form.js" defer></script>
     <script src="../script/form_validation.js" defer></script>
 </head>
 <body>
@@ -51,9 +53,7 @@
                         autofocus
                         autocomplete="off">
                 <datalist id="producten">
-                    <option value="Gorilla sailing laser hangband">
-                    <option value="ILCA Daggerboard GRP">
-                    <option value="ILCA rudder blade GRP">
+
                 </datalist>
                 <div id="ProductSpan"></div>
             </div>
@@ -170,7 +170,7 @@
                                 required>
                     </div>
                     <div>
-                        <label for="Material">materiaal van het form_results:</label>
+                        <label for="Material">materiaal van het product:</label>
                         <input
                                 type="text"
                                 name="materiaal"
