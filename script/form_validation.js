@@ -1,39 +1,28 @@
 window.addEventListener("load", INIT);
 
 function INIT() {
-    lastNameFocus();
-    nameFocus();
-    mailfocus();
+    let focusLastName = document.getElementById("LastName");
+    focusLastName.addEventListener("focusout", lastNameVal);
+    let focusName = document.getElementById("Name");
+    focusName.addEventListener("focusout", nameVal);
     submitButton();
-    productFocus();
+    let focusProduct = document.getElementById("ProductLijst");
+    focusProduct.addEventListener("change", productVal);
+    let click = document.getElementById("E-mail");
+    click.addEventListener("keyup", mailVal)
 }
 
-function SUBMIT() {
-    productVal();
-    lastNameVal()
-    nameVal();
-    mailVal();
-
-    if (productVal()){
-        if (lastNameVal()){
-            if (nameVal()){
-                if (mailVal()){
-                    return true;
-                }
-            }
-        }
+function SUBMIT(event) {
+    if (productVal() && lastNameVal() && nameVal() && mailVal()) {
+        return true;
+    } else {
+        event.preventDefault();
     }
-    return false;
 }
 
 function submitButton() {
     let button = document.getElementById("Submit");
-    button.addEventListener("click", SUBMIT);
-}
-
-function lastNameFocus() {
-    let focus = document.getElementById("LastName");
-    focus.addEventListener("focusout", lastNameVal);
+    button.addEventListener("click", SUBMIT)
 }
 
 function lastNameVal() {
@@ -53,14 +42,8 @@ function lastNameVal() {
         span.innerHTML = "";
         form.setAttribute("class", "validInput");
 
-        return form.value;
+        return true;
     }
-}
-
-
-function nameFocus() {
-    let focus = document.getElementById("Name");
-    focus.addEventListener("focusout", nameVal);
 }
 
 function nameVal() {
@@ -79,26 +62,15 @@ function nameVal() {
         console.log(form.value);
         span.innerHTML = "";
         form.setAttribute("class", "validInput");
-        return form.value;
+        return true;
     }
 }
 
-function mailfocus() {
-    let focus = document.getElementById("E-mail");
-    focus.addEventListener("focusin", mailClick)
-}
-
-function mailClick() {
-    let click = document.getElementById("E-mail");
-    click.addEventListener("keyup", mailVal)
-}
-
 function mailVal() {
-    let regex = new RegExp("([A-z]+\.[A-z]+(\.[0-9])?)@((kdg\.be)|(student\.kdg\.be))");
+    let regex = new RegExp("([A-z]+[\.]{1}[A-z]+(\.[0-9])?)@((kdg\.be)|(student\.kdg\.be))");
     let form = document.getElementById("E-mail");
     let correct = regex.test(form.value);
     let span = document.getElementById("EmailSpan");
-
 
     if (form.value.length < 2) {
         span.innerHTML = "Gelieve een waarde in te geven";
@@ -108,17 +80,12 @@ function mailVal() {
         span.innerHTML = "";
         console.log(form.value);
         form.setAttribute("class", "validInput")
-        return form.value;
+        return true;
     } else {
         span.innerHTML = "Email adres is niet van het correcte type";
-        form.removeAttribute("class", "validInput");
+        form.removeAttribute("class");
         return false;
     }
-}
-
-function productFocus(){
-    let focus = document.getElementById("ProductLijst");
-    focus.addEventListener("change", productVal);
 }
 
 function productVal() {
@@ -126,10 +93,10 @@ function productVal() {
     let span = document.getElementById("ProductSpan");
 
     if (form.value === "") {
-        span.innerHTML = "Gelieve een product te selecteren";
+        span.innerHTML = "Gelieve een form_results te selecteren";
         return false;
     } else {
         span.innerHTML = "";
-        return form.value;
+        return true;
     }
 }
