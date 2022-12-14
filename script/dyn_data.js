@@ -9,15 +9,17 @@ const materiaalId = ["Aluminium", "Carbon", "Inox", "IJzer"];
 
 const producten = [
     {
+        link: "ILCA_Daggerboard_GRP_Detail.html",
         beschikbaarId: 0,
         merkId: 0,
         kleurId: null,
         materiaalId: null,
         img: "../media/ilca-daggerboard-grp-ilc3910_6044912.jpg",
         naam: "ILCA Daggerboard GRP",
-        price: "615,00"
+        price: 615.00
     },
     {
+        link: "ILCA_Rudder_Blade_GRP_Detail.html",
         beschikbaarId: 0,
         merkId: 0,
         kleurId: null,
@@ -27,6 +29,7 @@ const producten = [
         price: 370.00
     },
     {
+        link: "Gorilla_sailing_laser_hangband_detail.html",
         beschikbaarId: 1,
         merkId: null,
         kleurId: 0,
@@ -36,6 +39,7 @@ const producten = [
         price: 34.95
     },
     {
+        link: null,
         beschikbaarId: 2,
         merkId: [0, 1],
         kleurId: 0,
@@ -45,6 +49,7 @@ const producten = [
         price: 52.50
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: [0, 1],
         kleurId: 0,
@@ -54,6 +59,7 @@ const producten = [
         price: 16.50
     },
     {
+        link: null,
         beschikbaarId: 1,
         merkId: 0,
         kleurId: 0,
@@ -63,6 +69,7 @@ const producten = [
         price: 1110.00
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: 0,
         kleurId: null,
@@ -72,6 +79,7 @@ const producten = [
         price: 17.50
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: 0,
         kleurId: 0,
@@ -81,6 +89,7 @@ const producten = [
         price: 3.95
     },
     {
+        link: null,
         beschikbaarId: 2,
         merkId: null,
         kleurId: 3,
@@ -90,6 +99,7 @@ const producten = [
         price: 9.95
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: null,
         kleurId: null,
@@ -99,6 +109,7 @@ const producten = [
         price: 265.00
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: null,
         kleurId: null,
@@ -108,6 +119,7 @@ const producten = [
         price: 2.25
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: null,
         kleurId: null,
@@ -117,6 +129,7 @@ const producten = [
         price: 5.75
     },
     {
+        link: null,
         beschikbaarId: 1,
         merkId: null,
         kleurId: null,
@@ -126,6 +139,7 @@ const producten = [
         price: 85.00
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: 3,
         kleurId: 0,
@@ -135,6 +149,7 @@ const producten = [
         price: 8.75
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: 3,
         kleurId: [0, 1, 3],
@@ -144,6 +159,7 @@ const producten = [
         price: 42.50
     },
     {
+        link: null,
         beschikbaarId: 2,
         merkId: null,
         kleurId: 2,
@@ -153,6 +169,7 @@ const producten = [
         price: 29.95
     },
     {
+        link: null,
         beschikbaarId: 1,
         merkId: null,
         kleurId: 0,
@@ -162,6 +179,7 @@ const producten = [
         price: 31.00
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: null,
         kleurId: 0,
@@ -171,6 +189,7 @@ const producten = [
         price: 146.00
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: null,
         kleurId: 3,
@@ -180,6 +199,7 @@ const producten = [
         price: 370.00
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: 2,
         kleurId: null,
@@ -189,6 +209,7 @@ const producten = [
         price: 2.04
     },
     {
+        link: null,
         beschikbaarId: 1,
         merkId: null,
         kleurId: 3,
@@ -198,6 +219,7 @@ const producten = [
         price: 2.15
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: null,
         kleurId: null,
@@ -207,6 +229,7 @@ const producten = [
         price: 1.25
     },
     {
+        link: null,
         beschikbaarId: 2,
         merkId: null,
         kleurId: null,
@@ -216,6 +239,7 @@ const producten = [
         price: 11.95
     },
     {
+        link: null,
         beschikbaarId: 0,
         merkId: 2,
         kleurId: [1, 2, 3],
@@ -246,101 +270,116 @@ function stringbuilder(ID, functie) {
     return string;
 }
 
-function getBeschikbaarheid(index) {
+function getLink(index) {
     if (!rangeCheck(index)) {
-        return false;
-    } else {
-        let product = producten[index];
-        let ID = product.beschikbaarId;
-
-        if (nullCheck(ID)) {
-            return false;
-        } else if (!arrayCheck(ID)) {
-            return beschikbaarId[ID];
-        } else {
-            return stringbuilder(ID, beschikbaarId);
-        }
-    }
-}
-
-function getMerk(index) {
-    if (!rangeCheck(index)) {
-        return false;
-    } else {
-        let product = producten[index];
-        let ID = product.merkId;
-
-        if (nullCheck(ID)) {
-            return false;
-        } else if (!arrayCheck(ID)) {
-            return merkId[ID];
-        } else {
-            return stringbuilder(ID, merkId);
-        }
-    }
-}
-
-function getKleur(index) {
-    if (!rangeCheck(index)) {
-        return false;
-    } else {
-        let product = producten[index];
-        let ID = product.kleurId;
-
-        if (nullCheck(ID)) {
-            return false;
-        } else if (!arrayCheck(ID)) {
-            return kleurId[ID];
-        } else {
-            return stringbuilder(ID, kleurId);
-        }
-    }
-}
-
-function getMateriaal(index) {
-    if (!rangeCheck(index)) {
-        return false;
-    } else {
-        let product = producten[index];
-        let ID = product.materiaalId;
-
-        if (nullCheck(ID)) {
-            return false;
-        } else if (!arrayCheck(ID)) {
-            return materiaalId[ID];
-        } else {
-            return stringbuilder(ID, materiaalId);
-        }
-    }
-}
-
-function getImg(index) {
-    if (!rangeCheck(index)){
         return false;
     } else{
-    let product = producten[index];
-    return product.img;
+        let product = producten[index];
+        let ID = product.link;
+
+        if (nullCheck(ID)){
+            return false;
+        } else{
+            return ID;
+        }
     }
 }
 
-function getNaam(index) {
-    if (!rangeCheck(index)){
-        return false;
-    } else{
-    let product = producten[index];
-    return product.naam;
-    }
-}
+    function getBeschikbaarheid(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            let ID = product.beschikbaarId;
 
-function getPrijs(index) {
-    if (!rangeCheck(index)){
-        return false;
-    } else{
-    let product = producten[index];
-    return product.price;
+            if (nullCheck(ID)) {
+                return false;
+            } else if (!arrayCheck(ID)) {
+                return beschikbaarId[ID];
+            } else {
+                return stringbuilder(ID, beschikbaarId);
+            }
+        }
     }
-}
 
-function getRange(){
-    return producten.length;
-}
+    function getMerk(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            let ID = product.merkId;
+
+            if (nullCheck(ID)) {
+                return false;
+            } else if (!arrayCheck(ID)) {
+                return merkId[ID];
+            } else {
+                return stringbuilder(ID, merkId);
+            }
+        }
+    }
+
+    function getKleur(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            let ID = product.kleurId;
+
+            if (nullCheck(ID)) {
+                return false;
+            } else if (!arrayCheck(ID)) {
+                return kleurId[ID];
+            } else {
+                return stringbuilder(ID, kleurId);
+            }
+        }
+    }
+
+    function getMateriaal(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            let ID = product.materiaalId;
+
+            if (nullCheck(ID)) {
+                return false;
+            } else if (!arrayCheck(ID)) {
+                return materiaalId[ID];
+            } else {
+                return stringbuilder(ID, materiaalId);
+            }
+        }
+    }
+
+    function getImg(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            return product.img;
+        }
+    }
+
+    function getNaam(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            return product.naam;
+        }
+    }
+
+    function getPrijs(index) {
+        if (!rangeCheck(index)) {
+            return false;
+        } else {
+            let product = producten[index];
+            return product.price;
+        }
+    }
+
+    function getRange() {
+        return producten.length;
+    }

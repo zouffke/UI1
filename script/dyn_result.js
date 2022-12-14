@@ -5,12 +5,17 @@ for (let i = 0; i < producten.length; i++){
         product = i;
     }
 }
+let link = document.createElement("a")
+link.href = getLink(product);
+link.target = "_blank";
+link.rel = "noreferrer noopener";
 
 let image = document.createElement("img");
 image.src = getImg(product);
 image.alt = getNaam(product);
 
-span.appendChild(image);
+span.appendChild(link);
+link.appendChild(image);
 
 let name = document.createElement("p");
 name.innerHTML = getNaam(product);
