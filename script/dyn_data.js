@@ -1,11 +1,11 @@
 const beschikbaarId = ["Beschikbaar", "Binnen kort beschikbaar", "Niet beschikbaar"];
-//0                        1                  2
+//                           0                        1                  2
 const merkId = ["ILCA", "Harken", "Allen", "Windesing"];
-//0        1         2         3
+//                  0        1         2         3
 const kleurId = ["Zwart", "Blauw", "Roze", "Rood"];
-//0        1        2       3
+//                   0        1        2       3
 const materiaalId = ["Aluminium", "Carbon", "Inox", "IJzer"];
-//0           1        2        3
+//                        0           1        2        3
 
 const producten = [
     {
@@ -254,30 +254,14 @@ function rangeCheck(index) {
     return !(index < 0 || index >= producten.length);
 }
 
-function arrayCheck(ID) {
-    return Array.isArray(ID);
-}
-
-function nullCheck(ID) {
-    return ID == null;
-}
-
-function stringbuilder(ID, functie) {
-    let string = "";
-    for (let i = 0; i < ID.length; i++) {
-        string += functie[ID[i]] + " ";
-    }
-    return string;
-}
-
 function getLink(index) {
     if (!rangeCheck(index)) {
         return false;
-    } else{
+    } else {
         let product = producten[index];
         let ID = product.link;
 
-        if (nullCheck(ID)){
+        if (ID == null){
             return false;
         } else{
             return ID;
@@ -285,101 +269,33 @@ function getLink(index) {
     }
 }
 
-    function getBeschikbaarheid(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            let ID = product.beschikbaarId;
-
-            if (nullCheck(ID)) {
-                return false;
-            } else if (!arrayCheck(ID)) {
-                return beschikbaarId[ID];
-            } else {
-                return stringbuilder(ID, beschikbaarId);
-            }
-        }
+function getImg(index) {
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        return product.img;
     }
+}
 
-    function getMerk(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            let ID = product.merkId;
-
-            if (nullCheck(ID)) {
-                return false;
-            } else if (!arrayCheck(ID)) {
-                return merkId[ID];
-            } else {
-                return stringbuilder(ID, merkId);
-            }
-        }
+function getNaam(index) {
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        return product.naam;
     }
+}
 
-    function getKleur(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            let ID = product.kleurId;
-
-            if (nullCheck(ID)) {
-                return false;
-            } else if (!arrayCheck(ID)) {
-                return kleurId[ID];
-            } else {
-                return stringbuilder(ID, kleurId);
-            }
-        }
+function getPrijs(index) {
+    if (!rangeCheck(index)) {
+        return false;
+    } else {
+        let product = producten[index];
+        return product.price;
     }
+}
 
-    function getMateriaal(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            let ID = product.materiaalId;
-
-            if (nullCheck(ID)) {
-                return false;
-            } else if (!arrayCheck(ID)) {
-                return materiaalId[ID];
-            } else {
-                return stringbuilder(ID, materiaalId);
-            }
-        }
-    }
-
-    function getImg(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            return product.img;
-        }
-    }
-
-    function getNaam(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            return product.naam;
-        }
-    }
-
-    function getPrijs(index) {
-        if (!rangeCheck(index)) {
-            return false;
-        } else {
-            let product = producten[index];
-            return product.price;
-        }
-    }
-
-    function getRange() {
-        return producten.length;
-    }
+function getRange() {
+    return producten.length;
+}
